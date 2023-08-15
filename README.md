@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @NoobDude828
+- 👋 Hi, I’m @Sumith
 - 💞️ I’m looking to collaborate on working on projects that will help me grow 
 - 📫 You can reach me through my email sumitadhikari828@gmail.com
 
