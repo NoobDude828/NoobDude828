@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>jump the bug</title>
+<style>
+  html,body{ margin:0; height:100%; background:#1e1e2e; display:flex; align-items:center; justify-content:center;
+    font-family:'Courier New',monospace; }
+  #wrap{ text-align:center; }
+  canvas{ background:#313244; border:1px solid #45475a; border-radius:12px; display:block; touch-action:manipulation; }
+  h1{ color:#cdd6f4; font-size:16px; font-weight:600; margin:0 0 10px; }
+  p{ color:#a6adc8; font-size:12px; margin:10px 0 0; }
+  a{ color:#cba6f7; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <h1>$ jump the bug — press space, click, or tap</h1>
+  <canvas id="c" width="700" height="260"></canvas>
+  <p>score resets on collision. good luck out there.</p>
+</div>
+
+<script>
+  const canvas = document.getElementById('c');
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width, H = canvas.height;
+  const groundY = H - 40;
+
+  let player, obstacles, score, best, speed, running, frame, runPhase;
+
+  function reset(){
+    player = { x:60, y:groundY-38, w:22, h:38, vy:0, jumping:false };
+    obstacles = [];
+    score = 0;
+    speed = 4.2;
+    running = true;
+    frame = 0;
+    runPhase = 0;
+  }
+
+  best = 0;
+  reset();
+
+  function spawnObstacle(){
+    const size = 16 + Math.random()*10;
+    obstacles.push({ x: W + 10, y: groundY - size*1.4, w: size, h: size*1.4 });
+  }
+  let nextSpawn = 60;
+
+  function jump(){
+    if(!running){ reset(); return; }
+    if(!player.jumping){
+      player.vy = -8.4;
+      player.jumping = true;
+    }
+  }
+
+  document.addEventListener('keydown', (e)=>{ if(e.code === 'Space'){ e.preventDefault(); jump(); } });
+  canvas.addEventListener('mousedown', jump);
+  canvas.addEventListener('touchstart', (e)=>{ e.preventDefault(); jump(); }, {passive:false});
+
+  // little running figure — head, torso, swinging arms/legs
+  function drawRunner(p){
+    const cx = p.x + p.w/2;
+    const headR = p.w * 0.34;
+    const headY = p.y + headR;
+    const torsoTop = headY + headR * 0.9;
+    const torsoBottom = p.y + p.h * 0.72;
+
+    ctx.strokeStyle = '#cba6f7';
+    ctx.fillStyle = '#cba6f7';
+    ctx.lineWidth = 3;
+    ctx.lineCap = 'round';
+
+    // head
+    ctx.beginPath();
+    ctx.arc(cx, headY, headR, 0, Math.PI * 2);
+    ctx.fill();
+
+    // torso
+    ctx.beginPath();
+    ctx.moveTo(cx, torsoTop);
+    ctx.lineTo(cx, torsoBottom);
+    ctx.stroke();
+
+    const legLen = p.h * 0.32;
+    const armLen = p.h * 0.22;
+    const armY = torsoTop + (torsoBottom - torsoTop) * 0.25;
+
+    if (p.jumping) {
+      // tucked running-jump pose
+      ctx.beginPath();
+      ctx.moveTo(cx, torsoBottom);
+      ctx.lineTo(cx + legLen * 0.7, torsoBottom + legLen * 0.5);
+      ctx.moveTo(cx, torsoBottom);
+      ctx.lineTo(cx - legLen * 0.4, torsoBottom + legLen * 0.7);
+      ctx.moveTo(cx, armY);
+      ctx.lineTo(cx + armLen * 0.8, armY - armLen * 0.4);
+      ctx.moveTo(cx, armY);
+      ctx.lineTo(cx - armLen * 0.6, armY + armLen * 0.5);
+      ctx.stroke();
+    } else {
+      const swing = Math.sin(runPhase) * 0.9;
+      ctx.beginPath();
+      ctx.moveTo(cx, torsoBottom);
+      ctx.lineTo(cx + Math.sin(swing) * legLen, torsoBottom + Math.cos(swing) * legLen);
+      ctx.moveTo(cx, torsoBottom);
+      ctx.lineTo(cx - Math.sin(swing) * legLen, torsoBottom + Math.cos(swing) * legLen);
+      ctx.moveTo(cx, armY);
+      ctx.lineTo(cx - Math.sin(swing) * armLen, armY + Math.cos(swing) * armLen * 0.6);
+      ctx.moveTo(cx, armY);
+      ctx.lineTo(cx + Math.sin(swing) * armLen, armY + Math.cos(swing) * armLen * 0.6);
+      ctx.stroke();
+    }
+  }
+
+  // little bug — oval body, legs, antennae
+  function drawBug(o){
+    const cx = o.x + o.w/2;
+    const color = '#f38ba8';
+    const gapColor = '#313244';
+
+    const bodyRX = o.w * 0.30;
+    const bodyRY = o.h * 0.36;
+    const bodyCY = o.y + o.h * 0.62;
+    const headR = o.w * 0.24;
+    const headCY = o.y + o.h * 0.20;
+
+    ctx.fillStyle = color;
+    ctx.strokeStyle = color;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+
+    // legs, drawn behind the body — 3 bent pairs, angled up / straight / down
+    const legW = Math.max(2, o.w * 0.14);
+    ctx.lineWidth = legW;
+    const legRows = [
+      { y: bodyCY - bodyRY*0.55, midDY: -bodyRY*0.2, endDY: -bodyRY*0.4 }, // front, angled up
+      { y: bodyCY,               midDY: 0,            endDY: 0 },           // middle, straight out
+      { y: bodyCY + bodyRY*0.55, midDY: bodyRY*0.2,  endDY: bodyRY*0.45 }  // back, angled down
+    ];
+    legRows.forEach(row => {
+      const startX = bodyRX * 0.75;
+      const midX = bodyRX * 1.25;
+      const endX = bodyRX * 1.55;
+      // right leg
+      ctx.beginPath();
+      ctx.moveTo(cx + startX, row.y);
+      ctx.lineTo(cx + midX, row.y + row.midDY);
+      ctx.lineTo(cx + endX, row.y + row.endDY);
+      ctx.stroke();
+      // left leg, mirrored
+      ctx.beginPath();
+      ctx.moveTo(cx - startX, row.y);
+      ctx.lineTo(cx - midX, row.y + row.midDY);
+      ctx.lineTo(cx - endX, row.y + row.endDY);
+      ctx.stroke();
+    });
+
+    // body
+    ctx.beginPath();
+    ctx.ellipse(cx, bodyCY, bodyRX, bodyRY, 0, 0, Math.PI*2);
+    ctx.fill();
+
+    // head
+    ctx.beginPath();
+    ctx.ellipse(cx, headCY, headR, headR*1.05, 0, 0, Math.PI*2);
+    ctx.fill();
+
+    // center seam splitting the body in two
+    ctx.strokeStyle = gapColor;
+    ctx.lineWidth = Math.max(1.5, bodyRX * 0.22);
+    ctx.beginPath();
+    ctx.moveTo(cx, bodyCY - bodyRY);
+    ctx.lineTo(cx, bodyCY + bodyRY);
+    ctx.stroke();
+  }
+
+  function loop(){
+    frame++;
+    ctx.clearRect(0,0,W,H);
+
+    // ground
+    ctx.strokeStyle = '#45475a';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(0, groundY);
+    ctx.lineTo(W, groundY);
+    ctx.stroke();
+
+    if(running){
+      player.vy += 0.55;
+      player.y += player.vy;
+      if(player.y > groundY - player.h){
+        player.y = groundY - player.h;
+        player.vy = 0;
+        player.jumping = false;
+      }
+      if(!player.jumping) runPhase += 0.35 + speed * 0.02;
+
+      nextSpawn--;
+      if(nextSpawn <= 0){
+        spawnObstacle();
+        nextSpawn = 55 + Math.random()*45 - Math.min(speed*2, 30);
+      }
+
+      speed += 0.0025;
+      obstacles.forEach(o => { o.x -= speed; });
+      obstacles = obstacles.filter(o => o.x + o.w > -10);
+
+      for(const o of obstacles){
+        if(player.x < o.x + o.w && player.x + player.w > o.x &&
+           player.y < o.y + o.h && player.y + player.h > o.y){
+          running = false;
+          best = Math.max(best, Math.floor(score));
+        }
+      }
+
+      score += 0.12;
+    }
+
+    drawRunner(player);
+    obstacles.forEach(drawBug);
+
+    ctx.fillStyle = '#cdd6f4';
+    ctx.font = '13px "Courier New", monospace';
+    ctx.fillText('score: ' + Math.floor(score), 16, 24);
+    ctx.fillText('best: ' + best, 16, 42);
+
+    if(!running){
+      ctx.fillStyle = 'rgba(30,30,46,0.72)';
+      ctx.fillRect(0,0,W,H);
+      ctx.fillStyle = '#cdd6f4';
+      ctx.font = '16px "Courier New", monospace';
+      ctx.textAlign = 'center';
+      ctx.fillText('game over — score ' + Math.floor(score), W/2, H/2 - 10);
+      ctx.font = '12px "Courier New", monospace';
+      ctx.fillStyle = '#a6adc8';
+      ctx.fillText('press space, click, or tap to retry', W/2, H/2 + 14);
+      ctx.textAlign = 'start';
+    }
+
+    requestAnimationFrame(loop);
+  }
+
+  loop();
+</script>
+</body>
+</html>
