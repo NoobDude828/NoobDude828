@@ -55,16 +55,8 @@
 <details>
 <summary><b>setup — click to expand</b></summary>
 <br/>
-
-This one needs your own small deployment since it reads your live Spotify status:
-
-1. Create an app at [developer.spotify.com/dashboard](https://developer.spotify.com/dashboard) — note the client ID and client secret.
-2. Fork [`novatorem/spotify-github-profile`](https://github.com/novatorem/spotify-github-profile) and follow its README to generate a refresh token (it walks you through one authorization URL).
-3. Deploy your fork to Vercel, setting three environment variables: `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`.
-4. Swap `YOUR-APP` in the `<img>` above for your Vercel deployment's domain.
-
-Once it's live, the card updates automatically as you listen — no further setup.
-
+This points at my live Spotify activity via <a href="https://github.com/kittinan/spotify-github-profile">kittinan/spotify-github-profile</a>, no deployment needed. Updates automatically while listening, you just have to verify your existing Spotify account!.
+ 
 </details>
 
 <br/>
