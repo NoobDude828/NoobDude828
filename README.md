@@ -49,8 +49,7 @@
 ### now playing
 
 <p align="center">
-  <!-- swap YOUR-APP for your deployed spotify-github-profile instance -->
-  <img src="https://YOUR-APP.vercel.app/api/spotify?background_color=1E1E2E" alt="currently playing on spotify" />
+  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=nwkvpxinlaumohjagpfwbjyhx&cover_image=true&theme=default&background_color=1E1E2E&border_radius=15" alt="currently playing on spotify" />
 </p>
 
 <details>
