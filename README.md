@@ -22,7 +22,7 @@
   <img src="https://skillicons.dev/icons?i=threejs" />
   <img width="48" height="48" src="https://cdn.simpleicons.org/greensock/FAB387" alt="GSAP" />
 </p>
-<sub>plus particles.js for lightweight background effects — no official logo, so it doesn't get an icon here</sub>
+<sub>plus particles.js for lightweight background effects</sub>
 
 ### also touches, when the interface needs it
 
