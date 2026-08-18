@@ -14,32 +14,28 @@
 
 </div>
 
-<img align="right" width="70" src="https://user-images.githubusercontent.com/74038190/226127923-0e8b7792-7b3c-462b-951b-63c96ba1a5af.gif" />
-
-<br clear="right"/>
-
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:E95678,50:FAB795,100:26BBD9&height=3" />
 
 <img align="right" width="420" src="https://user-images.githubusercontent.com/74038190/235224431-e8c8c12e-6826-47f1-89fb-2ddad83b3abf.gif" />
 
-### core stack
+### Core Stack
 
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,python" />
 </p>
 
-### motion &amp; graphics
+### Motion &amp; Graphics
 
 <p>
   <img src="https://skillicons.dev/icons?i=threejs" />
   <img width="48" height="48" src="https://cdn.simpleicons.org/greensock/26BBD9" alt="GSAP" />
 </p>
-<sub>plus particles.js for lightweight background effects</sub>
+<sub>plus tsParticles for lightweight background effects</sub>
 
-### also touches, when the interface needs it
+### Also touch, when the interface needs it
 
 <p>
-  <img src="https://skillicons.dev/icons?i=nodejs,express,postgres" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,postgres" />
 </p>
 
 <br clear="right"/>
@@ -49,26 +45,24 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:26BBD9,50:FAB795,100:E95678&height=3" />
 
-### terminal session
+### Terminal session
 
 <p align="center">
   <img src="./assets/terminal.svg" alt="animated terminal running a neofetch-style dev spec sheet" width="100%" />
 </p>
 
-<sub>a self-typing `neofetch --dev` dump — stack, tools, and mood, formatted like a terminal would actually show it instead of a dashboard widget.</sub>
-
 <br/>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:E95678,50:FAB795,100:26BBD9&height=3" />
 
-### now playing
+### Now Playing
 
 <p align="center">
   <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=nwkvpxinlaumohjagpfwbjyhx&cover_image=true&theme=default&background_color=1C1E26&border_radius=15" alt="currently playing on spotify" />
 </p>
 
 <details>
-<summary><b>setup — click to expand</b></summary>
+<summary><b>Setup — click to expand</b></summary>
 <br/>
 
 Want your own live "now playing" card?
@@ -81,21 +75,21 @@ Want your own live "now playing" card?
 
 <br/>
 
-### play
+### Play
 
 <p align="center">
   <a href="https://noobdude828.github.io/NoobDude828/"><img src="https://img.shields.io/badge/▶_play_a_quick_game-E95678?style=for-the-badge&logoColor=1C1E26" /></a>
 </p>
 
 <details>
-<summary><b>setup — click to expand</b></summary>
+<summary><b>Setup — click to expand</b></summary>
 <br/>
 
 A tiny canvas game (dodge the bug, press space/click/tap to jump) — `game.html` is included alongside this README. To host your own copy:
 
 1. In your own `yourusername/yourusername` repo, create a `docs/` folder and save `game.html` there as `docs/index.html`.
 2. Go to **Settings → Pages**, set source to **Deploy from a branch**, branch `main`, folder `/docs`.
-3. After a minute or two, it'll be live at `https://yourusername.github.io/yourusername/` — point the badge above at that URL once it's up.
+3. After a minute or two, it'll be live at `https://yourusername.github.io/yourusername/` point the badge above at that URL once it's up.
 
 </details>
 
@@ -103,7 +97,7 @@ A tiny canvas game (dodge the bug, press space/click/tap to jump) — `game.html
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:E95678,50:FAB795,100:26BBD9&height=3" />
 
-### connect
+### Connect
 
 <p align="center">
   <a href="https://github.com/NoobDude828"><img src="https://img.shields.io/badge/GitHub-232530?style=for-the-badge&logo=github&logoColor=E0E0E0" /></a>
