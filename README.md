@@ -1,16 +1,24 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=200&section=header&text=npx%20create-Karri%20--vibe%3Dchaotic-good&fontSize=30&animation=fadeIn&fontAlignY=38&desc=frontend%20engineer%20%C2%B7%20motion%20%C2%B7%20interfaces&descAlignY=58&descSize=16" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:E95678,50:FAB795,100:26BBD9&height=200&section=header&text=npx%20create-Karri%20--vibe%3Dchaotic-good&fontSize=30&fontColor=F2F2F2&animation=fadeIn&fontAlignY=38&desc=frontend%20engineer%20%C2%B7%20motion%20%C2%B7%20interfaces&descAlignY=58&descSize=16&descColor=F2F2F2" />
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:E95678,50:FAB795,100:26BBD9&height=200&section=header&text=npx%20create-Karri%20--vibe%3Dchaotic-good&fontSize=30&fontColor=1C1E26&animation=fadeIn&fontAlignY=38&desc=frontend%20engineer%20%C2%B7%20motion%20%C2%B7%20interfaces&descAlignY=58&descSize=16&descColor=1C1E26" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:E95678,50:FAB795,100:26BBD9&height=200&section=header&text=npx%20create-Karri%20--vibe%3Dchaotic-good&fontSize=30&fontColor=1C1E26&animation=fadeIn&fontAlignY=38&desc=frontend%20engineer%20%C2%B7%20motion%20%C2%B7%20interfaces&descAlignY=58&descSize=16&descColor=1C1E26" alt="npx create-Karri --vibe=chaotic-good" />
+</picture>
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2600&pause=800&center=true&vCenter=true&width=620&lines=%3E+builds+interfaces+that+move+like+they+mean+it_;%3E+GSAP+for+timing%2C+Three.js+for+depth%2C+particles+for+flair_;%3E+frontend+first%2C+backend+when+the+UI+needs+it_" alt="typing tagline" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2600&pause=800&color=F2F2F2&center=true&vCenter=true&width=620&lines=%3E+builds+interfaces+that+move+like+they+mean+it_;%3E+GSAP+for+timing%2C+Three.js+for+depth%2C+particles+for+flair_;%3E+frontend+first%2C+backend+when+the+UI+needs+it_" />
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2600&pause=800&color=1C1E26&center=true&vCenter=true&width=620&lines=%3E+builds+interfaces+that+move+like+they+mean+it_;%3E+GSAP+for+timing%2C+Three.js+for+depth%2C+particles+for+flair_;%3E+frontend+first%2C+backend+when+the+UI+needs+it_" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2600&pause=800&color=1C1E26&center=true&vCenter=true&width=620&lines=%3E+builds+interfaces+that+move+like+they+mean+it_;%3E+GSAP+for+timing%2C+Three.js+for+depth%2C+particles+for+flair_;%3E+frontend+first%2C+backend+when+the+UI+needs+it_" alt="typing tagline" />
+</picture>
 
 </div>
 
 <br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=3" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:E95678,50:FAB795,100:26BBD9&height=3" />
 
-<img align="right" width="300" src="https://user-images.githubusercontent.com/74038190/235224431-e8c8c12e-6826-47f1-89fb-2ddad83b3abf.gif" />
+<img align="right" width="420" src="https://user-images.githubusercontent.com/74038190/235224431-e8c8c12e-6826-47f1-89fb-2ddad83b3abf.gif" />
 
 ### core stack
 
@@ -22,7 +30,7 @@
 
 <p>
   <img src="https://skillicons.dev/icons?i=threejs" />
-  <img width="48" height="48" src="https://cdn.simpleicons.org/greensock/7DCFFF" alt="GSAP" />
+  <img width="48" height="48" src="https://cdn.simpleicons.org/greensock/26BBD9" alt="GSAP" />
 </p>
 <sub>plus particles.js for lightweight background effects</sub>
 
@@ -37,7 +45,7 @@
 
 <br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:7DCFFF,50:BB9AF7,100:7AA2F7&height=3" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:26BBD9,50:FAB795,100:E95678&height=3" />
 
 ### terminal session
 
@@ -49,12 +57,12 @@
 
 <br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=3" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:E95678,50:FAB795,100:26BBD9&height=3" />
 
 ### now playing
 
 <p align="center">
-  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=nwkvpxinlaumohjagpfwbjyhx&cover_image=true&theme=default&background_color=1A1B26&border_radius=15" alt="currently playing on spotify" />
+  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=nwkvpxinlaumohjagpfwbjyhx&cover_image=true&theme=default&background_color=1C1E26&border_radius=15" alt="currently playing on spotify" />
 </p>
 
 <details>
@@ -74,7 +82,7 @@ Want your own live "now playing" card?
 ### play
 
 <p align="center">
-  <a href="https://noobdude828.github.io/NoobDude828/"><img src="https://img.shields.io/badge/▶_play_a_quick_game-7AA2F7?style=for-the-badge&logoColor=1A1B26" /></a>
+  <a href="https://noobdude828.github.io/NoobDude828/"><img src="https://img.shields.io/badge/▶_play_a_quick_game-E95678?style=for-the-badge&logoColor=1C1E26" /></a>
 </p>
 
 <details>
@@ -91,20 +99,20 @@ A tiny canvas game (dodge the bug, press space/click/tap to jump) — `game.html
 
 <br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=3" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:E95678,50:FAB795,100:26BBD9&height=3" />
 
 ### connect
 
 <p align="center">
-  <a href="https://github.com/NoobDude828"><img src="https://img.shields.io/badge/GitHub-24283B?style=for-the-badge&logo=github&logoColor=C0CAF5" /></a>
+  <a href="https://github.com/NoobDude828"><img src="https://img.shields.io/badge/GitHub-232530?style=for-the-badge&logo=github&logoColor=E0E0E0" /></a>
   <!-- swap the # for your real links -->
-  <a href="https://www.linkedin.com/in/sumit-adhikari004/"><img src="https://img.shields.io/badge/LinkedIn-24283B?style=for-the-badge&logo=linkedin&logoColor=7DCFFF" /></a>
+  <a href="https://www.linkedin.com/in/sumit-adhikari004/"><img src="https://img.shields.io/badge/LinkedIn-232530?style=for-the-badge&logo=linkedin&logoColor=26BBD9" /></a>
 </p>
 
 <br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7DCFFF,50:BB9AF7,100:7AA2F7&height=100&section=footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:26BBD9,50:FAB795,100:E95678&height=100&section=footer" />
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=NoobDude828&color=7aa2f7&style=flat-square&label=profile+views" />
+  <img src="https://komarev.com/ghpvc/?username=NoobDude828&color=e95678&style=flat-square&label=profile+views" />
 </div>
