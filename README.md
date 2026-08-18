@@ -14,7 +14,9 @@
 
 </div>
 
-<br/>
+<img align="right" width="70" src="https://user-images.githubusercontent.com/74038190/226127923-0e8b7792-7b3c-462b-951b-63c96ba1a5af.gif" />
+
+<br clear="right"/>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:E95678,50:FAB795,100:26BBD9&height=3" />
 
