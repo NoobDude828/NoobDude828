@@ -10,9 +10,7 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=3" />
 
-<table>
-<tr>
-<td valign="top" width="65%">
+<img align="right" width="300" src="https://user-images.githubusercontent.com/74038190/235224431-e8c8c12e-6826-47f1-89fb-2ddad83b3abf.gif" />
 
 ### core stack
 
@@ -34,14 +32,8 @@
   <img src="https://skillicons.dev/icons?i=nodejs,express,postgres" />
 </p>
 
-</td>
-<td valign="top" width="35%" align="center">
+<br clear="right"/>
 
-<img src="https://user-images.githubusercontent.com/74038190/235224431-e8c8c12e-6826-47f1-89fb-2ddad83b3abf.gif" width="100%" />
-
-</td>
-</tr>
-</table>
 
 <br/>
 
