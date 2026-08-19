@@ -16,7 +16,7 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:E95678,50:FAB795,100:26BBD9&height=3" />
 
-<img align="right" width="400" src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/0b335028-1d3d-4ee5-b5b3-a373d499be7e" />
+<img align="right" width="380" src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/0b335028-1d3d-4ee5-b5b3-a373d499be7e" />
 
 ### Core Stack
 
