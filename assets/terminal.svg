@@ -19,14 +19,14 @@
   <text x="400" y="21" text-anchor="middle" font-size="12" fill="#A6ADC8">zsh — neofetch</text>
 
   <g font-size="14" fill="#CDD6F4">
-    <text x="24" y="61" clip-path="url(#clip0)" textLength="140" lengthAdjust="spacingAndGlyphs" fill="#CBA6F7">$ neofetch --dev</text>
-    <text x="24" y="85" clip-path="url(#clip1)" textLength="290" lengthAdjust="spacingAndGlyphs">os      : KarriOS — frontend build</text>
-    <text x="24" y="109" clip-path="url(#clip2)" textLength="340" lengthAdjust="spacingAndGlyphs">role    : frontend engineer, backend on call</text>
-    <text x="24" y="133" clip-path="url(#clip3)" textLength="380" lengthAdjust="spacingAndGlyphs">stack   : react · next.js · typescript · tailwind</text>
-    <text x="24" y="157" clip-path="url(#clip4)" textLength="310" lengthAdjust="spacingAndGlyphs">motion  : gsap · three.js · particles.js</text>
-    <text x="24" y="181" clip-path="url(#clip5)" textLength="140" lengthAdjust="spacingAndGlyphs">editor  : vscode</text>
-    <text x="24" y="205" clip-path="url(#clip6)" textLength="310" lengthAdjust="spacingAndGlyphs">uptime  : shipping interfaces since 2021</text>
-    <text x="24" y="229" clip-path="url(#clip7)" textLength="270" lengthAdjust="spacingAndGlyphs">mood    : mid-refactor, send coffee</text>
+    <text x="24" y="61" clip-path="url(#clip0)" textLength="140" lengthAdjust="spacingAndGlyphs" fill="#E95678">$ cat about.txt</text>
+    <text x="24" y="85" clip-path="url(#clip1)" textLength="300" lengthAdjust="spacingAndGlyphs">fuel      : coffee + a playlist on loop</text>
+    <text x="24" y="109" clip-path="url(#clip2)" textLength="380" lengthAdjust="spacingAndGlyphs">pace      : mine — a little planning, then dive in</text>
+    <text x="24" y="133" clip-path="url(#clip3)" textLength="370" lengthAdjust="spacingAndGlyphs">no figma? : paper first, sketch before pixels</text>
+    <text x="24" y="157" clip-path="url(#clip4)" textLength="430" lengthAdjust="spacingAndGlyphs">mid-task  : one thing at a time, always finish first</text>
+    <text x="24" y="181" clip-path="url(#clip5)" textLength="400" lengthAdjust="spacingAndGlyphs">deep in a bug : stubborn, loses track of the clock</text>
+    <text x="24" y="205" clip-path="url(#clip6)" textLength="300" lengthAdjust="spacingAndGlyphs">"done"    : happens eventually</text>
+    <text x="24" y="229" clip-path="url(#clip7)" textLength="390" lengthAdjust="spacingAndGlyphs">"satisfied" : rarely does, even then</text>
   </g>
 
   <rect x="24" y="248" width="8" height="14" fill="#F5C2E7">
