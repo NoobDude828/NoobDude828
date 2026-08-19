@@ -48,7 +48,7 @@
 ### Terminal session
 
 <p align="center">
-  <img src="./assets/terminal.svg" alt="animated terminal running a neofetch-style dev spec sheet" width="100%" />
+  <img src="./assets/terminal.svg" alt="animated terminal printing a personal about.txt file" width="100%" />
 </p>
 
 <br/>
