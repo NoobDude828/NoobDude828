@@ -33,7 +33,7 @@
     player = { x:60, y:groundY-38, w:22, h:38, vy:0, jumping:false };
     obstacles = [];
     score = 0;
-    speed = 4.2;
+    speed = 2.6;
     running = true;
     frame = 0;
     runPhase = 0;
@@ -197,15 +197,15 @@
         player.vy = 0;
         player.jumping = false;
       }
-      if(!player.jumping) runPhase += 0.35 + speed * 0.02;
+      if(!player.jumping) runPhase += 0.22 + speed * 0.015;
 
       nextSpawn--;
       if(nextSpawn <= 0){
         spawnObstacle();
-        nextSpawn = 55 + Math.random()*45 - Math.min(speed*2, 30);
+        nextSpawn = 70 + Math.random()*50 - Math.min(speed*2, 25);
       }
 
-      speed += 0.0025;
+      speed += 0.0012;
       obstacles.forEach(o => { o.x -= speed; });
       obstacles = obstacles.filter(o => o.x + o.w > -10);
 
