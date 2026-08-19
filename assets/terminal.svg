@@ -1,24 +1,24 @@
 <svg viewBox="0 0 800 290" xmlns="http://www.w3.org/2000/svg" font-family="Courier New, monospace">
   <defs>
     <clipPath id="clip0"><rect x="24" y="46" width="0" height="20"><animate attributeName="width" values="0;140;140;0;0" keyTimes="0;0.05625;0.625;0.6625;1" dur="16s" begin="0s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="clip1"><rect x="24" y="70" width="0" height="20"><animate attributeName="width" values="0;290;290;0;0" keyTimes="0;0.05625;0.5625;0.6;1" dur="16s" begin="1s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="clip2"><rect x="24" y="94" width="0" height="20"><animate attributeName="width" values="0;340;340;0;0" keyTimes="0;0.05625;0.5;0.5375;1" dur="16s" begin="2s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="clip3"><rect x="24" y="118" width="0" height="20"><animate attributeName="width" values="0;380;380;0;0" keyTimes="0;0.05625;0.4375;0.475;1" dur="16s" begin="3s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="clip4"><rect x="24" y="142" width="0" height="20"><animate attributeName="width" values="0;310;310;0;0" keyTimes="0;0.05625;0.375;0.4125;1" dur="16s" begin="4s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="clip5"><rect x="24" y="166" width="0" height="20"><animate attributeName="width" values="0;140;140;0;0" keyTimes="0;0.05625;0.3125;0.35;1" dur="16s" begin="5s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="clip6"><rect x="24" y="190" width="0" height="20"><animate attributeName="width" values="0;310;310;0;0" keyTimes="0;0.05625;0.25;0.2875;1" dur="16s" begin="6s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="clip7"><rect x="24" y="214" width="0" height="20"><animate attributeName="width" values="0;270;270;0;0" keyTimes="0;0.05625;0.1875;0.225;1" dur="16s" begin="7s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="clip1"><rect x="24" y="70" width="0" height="20"><animate attributeName="width" values="0;300;300;0;0" keyTimes="0;0.05625;0.5625;0.6;1" dur="16s" begin="1s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="clip2"><rect x="24" y="94" width="0" height="20"><animate attributeName="width" values="0;380;380;0;0" keyTimes="0;0.05625;0.5;0.5375;1" dur="16s" begin="2s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="clip3"><rect x="24" y="118" width="0" height="20"><animate attributeName="width" values="0;370;370;0;0" keyTimes="0;0.05625;0.4375;0.475;1" dur="16s" begin="3s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="clip4"><rect x="24" y="142" width="0" height="20"><animate attributeName="width" values="0;430;430;0;0" keyTimes="0;0.05625;0.375;0.4125;1" dur="16s" begin="4s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="clip5"><rect x="24" y="166" width="0" height="20"><animate attributeName="width" values="0;400;400;0;0" keyTimes="0;0.05625;0.3125;0.35;1" dur="16s" begin="5s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="clip6"><rect x="24" y="190" width="0" height="20"><animate attributeName="width" values="0;300;300;0;0" keyTimes="0;0.05625;0.25;0.2875;1" dur="16s" begin="6s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="clip7"><rect x="24" y="214" width="0" height="20"><animate attributeName="width" values="0;390;390;0;0" keyTimes="0;0.05625;0.1875;0.225;1" dur="16s" begin="7s" repeatCount="indefinite"/></rect></clipPath>
   </defs>
 
-  <rect x="0.5" y="0.5" width="799" height="289" rx="12" fill="#313244" stroke="#45475A"/>
-  <rect x="0.5" y="0.5" width="799" height="34" rx="12" fill="#1E1E2E"/>
-  <rect x="0.5" y="22" width="799" height="12" fill="#1E1E2E"/>
-  <circle cx="24" cy="17" r="5.5" fill="#F38BA8"/>
-  <circle cx="44" cy="17" r="5.5" fill="#F9E2AF"/>
-  <circle cx="64" cy="17" r="5.5" fill="#A6E3A1"/>
-  <text x="400" y="21" text-anchor="middle" font-size="12" fill="#A6ADC8">zsh — neofetch</text>
+  <rect x="0.5" y="0.5" width="799" height="289" rx="12" fill="#232530" stroke="#2E303E"/>
+  <rect x="0.5" y="0.5" width="799" height="34" rx="12" fill="#1C1E26"/>
+  <rect x="0.5" y="22" width="799" height="12" fill="#1C1E26"/>
+  <circle cx="24" cy="17" r="5.5" fill="#E95678"/>
+  <circle cx="44" cy="17" r="5.5" fill="#FAB795"/>
+  <circle cx="64" cy="17" r="5.5" fill="#26BBD9"/>
+  <text x="400" y="21" text-anchor="middle" font-size="12" fill="#6C6F93">zsh — about.txt</text>
 
-  <g font-size="14" fill="#CDD6F4">
+  <g font-size="14" fill="#E0E0E0">
     <text x="24" y="61" clip-path="url(#clip0)" textLength="140" lengthAdjust="spacingAndGlyphs" fill="#E95678">$ cat about.txt</text>
     <text x="24" y="85" clip-path="url(#clip1)" textLength="300" lengthAdjust="spacingAndGlyphs">fuel      : coffee + a playlist on loop</text>
     <text x="24" y="109" clip-path="url(#clip2)" textLength="380" lengthAdjust="spacingAndGlyphs">pace      : mine — a little planning, then dive in</text>
@@ -29,9 +29,9 @@
     <text x="24" y="229" clip-path="url(#clip7)" textLength="390" lengthAdjust="spacingAndGlyphs">"satisfied" : rarely does, even then</text>
   </g>
 
-  <rect x="24" y="248" width="8" height="14" fill="#F5C2E7">
+  <rect x="24" y="248" width="8" height="14" fill="#FAB795">
     <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.5;0.51;1" dur="1s" repeatCount="indefinite"/>
   </rect>
 
-  <text x="776" y="276" text-anchor="end" font-size="10" fill="#A6ADC8" letter-spacing="0.5">// specs may vary, personality does not</text>
+  <text x="776" y="276" text-anchor="end" font-size="10" fill="#6C6F93" letter-spacing="0.5">// notebook has more of this than git ever will</text>
 </svg>
